@@ -1,0 +1,44 @@
+body {
+	background-color: #dce6f5;
+}
+
+/* ***************** dream-team page ***************** */
+
+.header {
+ font-size: 2em;
+ text-align: center;
+ padding: 20px;
+}
+
+.team {
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	vertical-align: top;
+}
+
+div.team > form {
+	display: inline-block;
+}
+
+.profile-link {
+	color: red;
+	display: block;
+	margin-top: 20px;
+}
+
+.profile-image {
+	width: 80%;
+	max-height: 300px;
+}
+
+.create-new {
+	text-align: center;
+	padding: 1px 0 40px 0;
+}
+
+
+/* ***************** profile page ***************** */
+.player-profile {
+	display: inline-block;
+}

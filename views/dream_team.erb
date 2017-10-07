@@ -1,0 +1,40 @@
+<div class="header">The Dream Team</div>
+
+
+<div class="create-new">
+	<form action="/dream_team" method="post">
+		<button>Create</button>
+		<input type="text" name="name" value="New Player">
+		<input type="hidden" name="image_url" value="https://www.colourbox.com/preview/10745378-silhouette-of-unknown-man-in-profile.jpg">
+	</form>
+</div>
+
+
+
+
+
+
+<% @dream_team.each do |footballer| %>
+	
+	<div class="team">
+		<a href="/profile/<%= footballer['id'] %>" class="profile-link">
+			<%= footballer['name'] %>
+		</a>
+
+		<form action="/update_info/<%= footballer['id'] %>" method="get">
+			<button type="submit">Edit</button>
+		</form>
+
+		<form action="/dream_team"  method="post">
+			<input type="hidden" name="_method" value="delete">
+			<button type="submit">Delete</button>
+			<input type="hidden" name="player_id" value="<%= footballer['id'] %>">
+		</form>
+
+		<img class="profile-image" src="<%= footballer['image_url'] %>" alt="">
+
+	</div>
+
+<%end%>
+
+

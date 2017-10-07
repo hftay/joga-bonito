@@ -1,0 +1,27 @@
+<div class="update">
+	
+	<a href="/dream_team">Home</a>
+	
+	<form action="/profile/<%= @player['id'] %>" method="post">
+		<input type="hidden" name="_method" value="put">
+
+		<div>Name:</div>
+		<textarea name="name" id="" cols="20" rows="1"><%= @player['name'] %></textarea>
+
+		<div>Age:</div>
+		<textarea name="age" id="" cols="20" rows="1"><%= @player['age'] %></textarea>
+
+		<div>Career Goals:</div>
+		<textarea name="goals_scored" id="" cols="20" rows="1"><%= @player['goals_scored'] %></textarea>
+
+		<div>Career Assists:</div>
+		<textarea name="assists" id="" cols="20" rows="1"><%= @player['assists'] %></textarea>
+
+		<div>Image URL:</div>
+		<textarea name="image_url" id="" cols="40" rows="3"><%= @player['image_url'] %></textarea>
+
+		<button type="submit">Update</button>
+
+	</form>
+
+</div>
