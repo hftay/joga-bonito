@@ -12,7 +12,7 @@ end
 
 # ----------------- read homepage "dream team" ----------------- 
 get '/' do
-  erb :index
+  # erb :index
   redirect '/dream_team'
 end
 
