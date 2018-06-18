@@ -1,7 +1,7 @@
      
 require 'pg'
 require 'sinatra'
-require 'sinatra/reloader'
+# require 'sinatra/reloader'
 require 'pry'
 
 # ----------------- set up database connection ----------------- 
